@@ -35,3 +35,55 @@ header h1 {
     color: var(--grey);
     margin-bottom: 1rem;
 }
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-form {
+    display: flex;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+    color: var(--grey)
+}
+
+#new-task-submit {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 1.2s;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+    background-image: linear-gradient(to left, rgb(89, 146, 243), rgb(137, 137, 224), rgb(34, 190, 251));
+}
+
+#new-task-submit:active {
+    opacity: 0.4;
+}
