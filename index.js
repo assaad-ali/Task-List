@@ -8,5 +8,8 @@ window.addEventListener('load', () => {
 		e.preventDefault();
 
 		const task = input.value;
+
+		const task_el = document.createElement('div');
+		task_el.classList.add('task');
 	});
 })
